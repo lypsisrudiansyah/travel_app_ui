@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:travel_app_ui/screen/home/widget/category_list.dart';
+import 'package:travel_app_ui/screen/home/widget/place_item.dart';
 import 'package:travel_app_ui/screen/home/widget/search_input.dart';
 import 'package:travel_app_ui/theme.dart';
 import 'package:sizer/sizer.dart';
@@ -27,7 +28,8 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ),
-            CategoryList()
+            const CategoryList(),
+            PlaceItem(),
           ],
         ),
       ),
@@ -45,8 +47,8 @@ class HomeScreen extends StatelessWidget {
           width: 24,
         ),
       ),
-      actions: [
-        const Padding(
+      actions: const [
+        Padding(
           padding: EdgeInsets.only(right: 10),
           child: CircleAvatar(backgroundImage: AssetImage('assets/images/profile.png')),
         )
