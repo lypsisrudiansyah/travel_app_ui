@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:travel_app_ui/screen/home/widget/category_list.dart';
-import 'package:travel_app_ui/screen/home/widget/place_item.dart';
+import 'package:travel_app_ui/screen/home/widget/place_staggered_gridview.dart';
 import 'package:travel_app_ui/screen/home/widget/search_input.dart';
 import 'package:travel_app_ui/theme.dart';
 import 'package:sizer/sizer.dart';
@@ -29,7 +29,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             const CategoryList(),
-            PlaceItem(),
+            PlaceStaggeredGridview(),
           ],
         ),
       ),

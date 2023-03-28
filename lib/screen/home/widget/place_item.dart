@@ -11,7 +11,7 @@ class PlaceItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.bottomLeft,
-      height: 240,
+      height: place.height,
       width: 200,
       decoration: BoxDecoration(
         image: DecorationImage(
@@ -29,18 +29,18 @@ class PlaceItem extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
-          children: const [
+          children: [
             Text(
-              "place.title",
-              style: TextStyle(
+              place.title,
+              style: const TextStyle(
                 color: Colors.white,
                 fontSize: 16.0,
                 fontWeight: FontWeight.bold,
               ),
             ),
             Text(
-              "place.subtitle",
-              style: TextStyle(
+              place.subtitle,
+              style: const TextStyle(
                 color: Colors.white,
                 fontSize: 14.0,
               ),
