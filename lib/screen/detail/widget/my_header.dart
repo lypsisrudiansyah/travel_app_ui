@@ -1,6 +1,7 @@
 // ignore_for_file: camel_case_types, prefer_typing_uninitialized_variables
 
 import 'package:flutter/material.dart';
+import 'package:travel_app_ui/theme.dart';
 
 class MyHeader extends StatelessWidget {
   final String imageUrl;
@@ -26,12 +27,26 @@ class MyHeader extends StatelessWidget {
               Navigator.pop(context);
             },
             child: Container(
-              padding: const EdgeInsets.only(left: 10, top: 5, bottom: 5,),
-              decoration: const BoxDecoration(
-                color: Colors.white
+              padding: const EdgeInsets.only(
+                left: 10,
+                top: 5,
+                bottom: 5,
               ),
-              child: const Icon(Icons.arrow_back),
+              decoration: const BoxDecoration(color: Colors.white),
+              child: const Icon(Icons.arrow_back_ios),
             ),
+          ),
+        ),
+        Positioned(
+          right: 50,
+          bottom: 0,
+          child: Container(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              color: accentColor,
+              borderRadius: BorderRadius.circular(36),
+            ),
+            child: const Icon(Icons.favorite, color: Colors.red,),
           ),
         )
       ]),

@@ -2,7 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:travel_app_ui/model/place.dart';
+import 'package:travel_app_ui/screen/detail/widget/about.dart';
 import 'package:travel_app_ui/screen/detail/widget/my_header.dart';
+import 'package:travel_app_ui/screen/detail/widget/place_name.dart';
+import 'package:travel_app_ui/theme.dart';
 
 class DetailScreen extends StatelessWidget {
   final Place place;
@@ -11,10 +14,13 @@ class DetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: backgroundColor,
       body: SingleChildScrollView(
         child: Column(
-          children:  [
+          children: [
             MyHeader(imageUrl: place.imageUrl),
+            PlaceName(title: place.title, subtitle: place.subtitle),
+            const About( )
           ],
         ),
       ),
