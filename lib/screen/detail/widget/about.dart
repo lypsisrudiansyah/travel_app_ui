@@ -22,7 +22,7 @@ class About extends StatelessWidget {
             ),
           ),
           const Text(
-            "Plitvice Lakes is a national park in Croatia that is famous for its stunning scenery of 16 lakes connected by waterfalls and cascades. The lakes have different colors ranging from blue to green, depending on the minerals and algae in the water.",
+            "Raja Ampat is a group of more than 1500 islands in West Papua, Indonesia. It is known for its stunning natural beauty, rich marine life, and diverse coral reefs.",
             textAlign: TextAlign.justify,
             style: TextStyle(
               fontSize: 14.0,

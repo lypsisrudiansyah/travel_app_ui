@@ -13,12 +13,13 @@ class Place {
   
   static List<Place> generatePlaces() {
     return [
-      Place(title: "Rain Forest", subtitle: "Costa Rica", imageUrl: 'assets/images/travel1.jpg', height: 240),
-      Place(title: "Lake Louise", subtitle: "Canada", imageUrl: 'assets/images/travel2.jpg', height: 200),
-      Place(title: "Plitvice Lakes", subtitle: "Croatia", imageUrl: 'assets/images/travel3.jpg', height: 120),
-      Place(title: "Dubai", subtitle: "UAE", imageUrl: 'assets/images/travel4.jpg', height: 200),
-      Place(title: "Rain Forest", subtitle: "Canada", imageUrl: 'assets/images/mp_1.jpg', height: 240),
-      Place(title: "Plitivice Lakes", subtitle: "Costa Rica", imageUrl: 'assets/images/mp_2.jpg', height: 150),
+      Place(title: "Raja Ampat", subtitle: "Indonesia", imageUrl: 'assets/images/rajaampat.jpg', height: 240),
+      Place(title: "South Kuta", subtitle: "Indonesia", imageUrl: 'assets/images/southkuta.jpg', height: 200),
+      Place(title: "Desert", subtitle: "Morocco", imageUrl: 'assets/images/desertmorocco.jpg', height: 120),
+      Place(title: "Forest", subtitle: "Slovenia", imageUrl: 'assets/images/forestslovenia.jpg', height: 200),
+      Place(title: "Moraine Lake", subtitle: "Canada", imageUrl: 'assets/images/morainelake.jpg', height: 240),
+      Place(title: "Kerid Crater", subtitle: "Iceland", imageUrl: 'assets/images/keridcratericeland.jpg', height: 150),
+      Place(title: "Ice Caves", subtitle: "Iceland", imageUrl: 'assets/images/icecavesiceland.jpg', height: 150),
     ];
   }
 }
