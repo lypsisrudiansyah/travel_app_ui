@@ -27,19 +27,20 @@ class MyHeader extends StatelessWidget {
               Navigator.pop(context);
             },
             child: Container(
+              
               padding: const EdgeInsets.only(
                 left: 10,
                 top: 5,
                 bottom: 5,
               ),
-              decoration: const BoxDecoration(color: Colors.white),
+              decoration:  BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
               child: const Icon(Icons.arrow_back_ios),
             ),
           ),
         ),
         Positioned(
-          right: 50,
-          bottom: 0,
+          right: 20,
+          bottom: 5,
           child: Container(
             padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
